@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: {{ include "sample-python-app.fullname" . }}
   labels:
-    {{- include "python-app.labels" . | nindent 4 }}
+    {{- include "sample-python-app.labels" . | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}
   ports:

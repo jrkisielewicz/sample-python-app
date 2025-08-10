@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: jrkisielewicz/python-app:v1
+  repository: jrkisielewicz/sample-python-app:v1
   pullPolicy: IfNotPresent
   tag: v1
 

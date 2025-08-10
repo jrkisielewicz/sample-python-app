@@ -55,7 +55,7 @@ Create the name of the service account to use
 */}}
 {{- define "sample-python-app.serviceAccountName" -}}
 {{- if .Values.serviceAccount.create }}
-{{- default (include "python-app.fullname" .) .Values.serviceAccount.name }}
+{{- default (include "sample-python-app.fullname" .) .Values.serviceAccount.name }}
 {{- else }}
 {{- default "default" .Values.serviceAccount.name }}
 {{- end }}
