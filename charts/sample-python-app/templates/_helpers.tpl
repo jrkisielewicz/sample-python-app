@@ -35,7 +35,7 @@ Common labels
 */}}
 {{- define "sample-python-app.labels" -}}
 helm.sh/chart: {{ include "sample-python-app.chart" . }}
-{{ include "python-app.selectorLabels" . }}
+{{ include "sample-python-app.selectorLabels" . }}
 {{- if .Chart.AppVersion }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 {{- end }}
