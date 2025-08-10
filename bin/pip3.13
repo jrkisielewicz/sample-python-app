@@ -1,4 +1,4 @@
-#!/Users/JKisielewicz/workspace/python-app/bin/python3.13
+#!/Users/JKisielewicz/workspace/sample-python-app/bin/python3.13
 # -*- coding: utf-8 -*-
 import re
 import sys
