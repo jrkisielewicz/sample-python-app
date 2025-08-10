@@ -1,7 +1,7 @@
 {{/*
 Expand the name of the chart.
 */}}
-{{- define "python-app.name" -}}
+{{- define "sample-python-app.name" -}}
 {{- default .Chart.Name .Values.nameOverride | trunc 63 | trimSuffix "-" }}
 {{- end }}
 
@@ -10,7 +10,7 @@ Create a default fully qualified app name.
 We truncate at 63 chars because some Kubernetes name fields are limited to this (by the DNS naming spec).
 If release name contains chart name it will be used as a full name.
 */}}
-{{- define "python-app.fullname" -}}
+{{- define "sample-python-app.fullname" -}}
 {{- if .Values.fullnameOverride }}
 {{- .Values.fullnameOverride | trunc 63 | trimSuffix "-" }}
 {{- else }}
@@ -26,14 +26,14 @@ If release name contains chart name it will be used as a full name.
 {{/*
 Create chart name and version as used by the chart label.
 */}}
-{{- define "python-app.chart" -}}
+{{- define "sample-python-app.chart" -}}
 {{- printf "%s-%s" .Chart.Name .Chart.Version | replace "+" "_" | trunc 63 | trimSuffix "-" }}
 {{- end }}
 
 {{/*
 Common labels
 */}}
-{{- define "python-app.labels" -}}
+{{- define "sample-python-app.labels" -}}
 helm.sh/chart: {{ include "python-app.chart" . }}
 {{ include "python-app.selectorLabels" . }}
 {{- if .Chart.AppVersion }}
@@ -45,7 +45,7 @@ app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{/*
 Selector labels
 */}}
-{{- define "python-app.selectorLabels" -}}
+{{- define "sample-python-app.selectorLabels" -}}
 app.kubernetes.io/name: {{ include "python-app.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end }}
@@ -53,7 +53,7 @@ app.kubernetes.io/instance: {{ .Release.Name }}
 {{/*
 Create the name of the service account to use
 */}}
-{{- define "python-app.serviceAccountName" -}}
+{{- define "sample-python-app.serviceAccountName" -}}
 {{- if .Values.serviceAccount.create }}
 {{- default (include "python-app.fullname" .) .Values.serviceAccount.name }}
 {{- else }}
