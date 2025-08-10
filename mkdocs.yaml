@@ -1,0 +1,12 @@
+site_name: 'sample-python-app'
+site_description: 'Main documentation for the sample-python-app'
+repo_url: https://github.com/jrkisielewicz/sample-python-app
+edit_uri: edit/main/docs
+
+plugins:
+  - techdocs-core
+
+# For sidebar navigation on https://backstage.io/, see `microsite/sidebars.json`
+nav:
+  - Overview:
+      - Getting started: 'docs/index.md'
