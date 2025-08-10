@@ -13,7 +13,7 @@ setenv VIRTUAL_ENV /Users/JKisielewicz/workspace/sample-python-app
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/"bin":$PATH"
-setenv VIRTUAL_ENV_PROMPT python-app
+setenv VIRTUAL_ENV_PROMPT sample-python-app
 
 
 set _OLD_VIRTUAL_PROMPT="$prompt"

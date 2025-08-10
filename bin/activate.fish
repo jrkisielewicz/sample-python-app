@@ -37,7 +37,7 @@ set -gx VIRTUAL_ENV /Users/JKisielewicz/workspace/sample-python-app
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/"bin $PATH
-set -gx VIRTUAL_ENV_PROMPT python-app
+set -gx VIRTUAL_ENV_PROMPT sample-python-app
 
 # Unset PYTHONHOME if set.
 if set -q PYTHONHOME
