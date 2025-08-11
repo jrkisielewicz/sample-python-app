@@ -11,13 +11,6 @@ jobs:
   docker:
     runs-on: self-hosted
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
-  ci:
-    runs-on: self-hosted
-    steps:
       - name: Shorten commit id
         shell: bash
         run: |
