@@ -32,7 +32,7 @@ jobs:
       commit_id: ${{ env.COMMIT_ID }}
 
   cd:
-    needs: cd
+    needs: ci
     runs-on: self-hosted
     steps:
 
